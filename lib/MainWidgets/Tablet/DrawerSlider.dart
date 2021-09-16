@@ -16,7 +16,6 @@ class TabletDrawerToolsScreen extends StatelessWidget {
         color: Color(0xffF0F2F5),
         child: ListView(
           children: [
-
             ListTile(
               leading: CurrentCircleProfile(),
               title: Text("${UserData.currentUser.user}"),
@@ -55,14 +54,12 @@ class TabletDrawerToolsScreen extends StatelessWidget {
               leading: CircleAvatar(
                   backgroundColor: Color(0xffE4E6EB),
                   child: IconButton(onPressed: (){
-                    Get.back();
+                    Navigator.pop ;
                   },
                       icon: Icon(Icons.arrow_back_outlined,
                         color: Colors.black,))),
               title: Text("Back"),
             ),
-
-
           ],
         ),
       ),
