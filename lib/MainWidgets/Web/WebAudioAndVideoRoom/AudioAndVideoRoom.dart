@@ -14,7 +14,7 @@ class WebAudioAndVideoRoom extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 15.0,),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
@@ -26,33 +26,28 @@ class WebAudioAndVideoRoom extends StatelessWidget {
               itemCount:  UserData.onLineUsers.length,
               itemBuilder: (context, index) {
                 if (index == 0) {
-                  return InkWell(
-                    onTap: (){},
-                    child: ClipRRect(
-                      borderRadius: BorderRadius.circular(25.0),
-                      child:  Container(
-                        decoration: BoxDecoration(
-                          border: Border.all(
-                            color: PlatColors.webBorder
-                          )
-                        ),
-                        child: Chip(
-                          backgroundColor: Colors.white,
-                          label: Row(
-                            children: [
-                              Image.asset("assets/icons/room.png"),
-                              Text(
-                                "Create Room",
-                                style: TextStyle(
-                                  fontWeight: FontWeight.bold,
-                                  color: Color(0xff2164AE),
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
+                  return Container(
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: PlatColors.webBorder
                       ),
+                      borderRadius: BorderRadius.circular(25.0)
                     ),
+                    child: MaterialButton(
+                      onPressed: (){},
+                      child: Row(
+                        children: [
+                          Image.asset("assets/icons/room.png"),
+                          Text(
+                            "Create Room",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold,
+                              color: Color(0xff2164AE),
+                            ),
+                          ),
+                        ],
+                      ),
+                    )
                   );
                 }
                 return WebOnlineCircleProfile(index);

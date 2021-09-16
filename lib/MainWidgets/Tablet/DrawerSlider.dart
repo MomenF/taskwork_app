@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:taskwork_app/CommonWidgets/CircleProfile/Current.dart';
 import 'package:taskwork_app/Data/Data.dart';
 import 'package:taskwork_app/MainWidgets/Web/webOnlineCircleProfile.dart';
+import 'package:taskwork_app/contants.dart';
+import 'package:get/get.dart';
 
 class TabletDrawerToolsScreen extends StatelessWidget {
 
@@ -14,6 +16,7 @@ class TabletDrawerToolsScreen extends StatelessWidget {
         color: Color(0xffF0F2F5),
         child: ListView(
           children: [
+
             ListTile(
               leading: CurrentCircleProfile(),
               title: Text("${UserData.currentUser.user}"),
@@ -48,6 +51,17 @@ class TabletDrawerToolsScreen extends StatelessWidget {
               ),
               title: Text("Other"),
             ),
+            ListTile(
+              leading: CircleAvatar(
+                  backgroundColor: Color(0xffE4E6EB),
+                  child: IconButton(onPressed: (){
+                    Get.back();
+                  },
+                      icon: Icon(Icons.arrow_back_outlined,
+                        color: Colors.black,))),
+              title: Text("Back"),
+            ),
+
 
           ],
         ),

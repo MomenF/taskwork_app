@@ -35,19 +35,58 @@ class _WebSplashScreenState extends State<WebSplashScreen> {
             period: Duration(
                 seconds: 4
             ),
-            child: ListView.builder(
-                itemCount: 10,
-                itemBuilder: (context,index){
-                  return ListTile(
-                    leading: Icon(Icons.image,size: 50.0,),
-                    title: SizedBox(
-                      child: Container(
-                        color: Colors.grey[100],
-                        height: 20,
-                      ),
-                    ),
-                  );
-                }),
+            child: Row(
+              children: [
+                Expanded(
+                  flex: 1,
+                  child: ListView.builder(
+                      itemCount: 10,
+                      itemBuilder: (context,index){
+                        return ListTile(
+                          leading: Icon(Icons.image,size: 50.0,),
+                          title: SizedBox(
+                            child: Container(
+                              color: Colors.grey[100],
+                              height: 20,
+                            ),
+                          ),
+                        );
+                      }),
+                ),
+                Expanded(
+                  flex: 2,
+                  child: ListView.builder(
+                      itemCount: 10,
+                      itemBuilder: (context,index){
+                        return ListTile(
+                          leading: Icon(Icons.image,size: 50.0,),
+                          title: SizedBox(
+                            child: Container(
+                              color: Colors.grey[100],
+                              height: 20,
+                            ),
+                          ),
+                        );
+                      }),
+                ),
+                Expanded(
+                  flex: 1,
+                  child: ListView.builder(
+                      itemCount: 10,
+                      itemBuilder: (context,index){
+                        return ListTile(
+                          leading: Icon(Icons.image,size: 50.0,),
+                          title: SizedBox(
+                            child: Container(
+                              color: Colors.grey[100],
+                              height: 20,
+                            ),
+                          ),
+                        );
+                      }),
+                ),
+              ],
+            ),
             baseColor: Color(0xffCCCCCC),
             highlightColor: Colors.white)
     );

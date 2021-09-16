@@ -261,31 +261,35 @@ class TabletScreen extends StatelessWidget {
                       )),
                   Expanded(
                       flex: 1,
-                      child: Container(
-                        color: Color(0xffF0F2F5),
-                        child: SingleChildScrollView(
+                      child: Expanded(
+                        child: Container(
+                          color: Color(0xffF0F2F5),
                           child: Column(
+                            // mainAxisSize: MainAxisSize.min,
+                            // mainAxisAlignment: MainAxisAlignment.start,
                             children: [
                               ListTile(
                                 title: Text("Contacts"),
                                 trailing : IconButton(onPressed: (){}, icon: Icon(Icons.search)) ,
                               ),
-                              Container(
-                                child: ListView.separated(
-                                    shrinkWrap: true,
-                                    physics: NeverScrollableScrollPhysics(),
-                                    itemCount: UserData.onLineUsers.length ,
-                                    separatorBuilder: (context,index){
-                                      return SizedBox(
-                                        height: 5.0,
-                                      );
-                                    },
-                                    itemBuilder: (context,index){
-                                      return ListTile(
-                                        leading: WebOnlineCircleProfile(index),
-                                        title: Text("${UserData.onLineUsers[index].user}"),
-                                      );
-                                    }),
+                              Expanded(
+                                child: Container(
+                                  child: ListView.separated(
+                                      shrinkWrap: true,
+                                      physics: NeverScrollableScrollPhysics(),
+                                      itemCount: UserData.onLineUsers.length ,
+                                      separatorBuilder: (context,index){
+                                        return SizedBox(
+                                          height: 5.0,
+                                        );
+                                      },
+                                      itemBuilder: (context,index){
+                                        return ListTile(
+                                          leading: WebOnlineCircleProfile(index),
+                                          title: Text("${UserData.onLineUsers[index].user}"),
+                                        );
+                                      }),
+                                ),
                               )
 
                             ],

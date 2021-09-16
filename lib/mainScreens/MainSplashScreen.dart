@@ -10,7 +10,7 @@ import 'package:taskwork_app/Util/Responsive.dart';
 import '../SplashScreens/MobileSplashScreen.dart';
 
 class MainSplashScreen extends StatelessWidget {
-  static String id = "MainSplashScreen";
+  static String id = "/MainSplashScreen";
 
   @override
   Widget build(BuildContext context) {

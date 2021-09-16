@@ -38,9 +38,8 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity
       ),
       home: MainScreen(),
-      initialRoute: WebSplashScreen.id,
+      initialRoute: MainSplashScreen.id,
       routes: {
-        WebSplashScreen.id : (context)=> WebSplashScreen(),
         MainSplashScreen.id : (context)=> MainSplashScreen(),
         MobileSliderToolsScreen.id : (context)=> MobileSliderToolsScreen(),
         MobileContactSliderScreen.id : (context)=> MobileContactSliderScreen(),
