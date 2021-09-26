@@ -29,8 +29,7 @@ class _WebSplashScreenState extends State<WebSplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-        ) ,
+
         body: Shimmer.fromColors(
             period: Duration(
                 seconds: 4

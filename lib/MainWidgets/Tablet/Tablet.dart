@@ -16,6 +16,7 @@ import '../../contants.dart';
 import '../../CommonWidgets/StartSlider/ChatScreen.dart';
 
 class TabletScreen extends StatelessWidget {
+  var scaffoldKey = new GlobalKey<ScaffoldState>();
 
   @override
   Widget build(BuildContext context) {
@@ -28,9 +29,9 @@ class TabletScreen extends StatelessWidget {
           child: Scaffold(
             // drawer: TabletDrawerToolsScreen(),
             appBar: PreferredSize(
-              preferredSize: Size.fromHeight(120.0),
-              child: Scrollbar(
-                controller: MyCustomScroll.controller,
+              preferredSize: Size.fromHeight(100.0),
+              child: ScrollConfiguration(
+                behavior: MyCustomScroll(),
                 child: Row(
                   children: [
                     Expanded(
@@ -97,7 +98,9 @@ class TabletScreen extends StatelessWidget {
                           CircleAvatar(
                             backgroundColor: PlatColors.mainColor,
                             child: IconButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Scaffold.of(context).showBottomSheet((context) => ContactSliderScreen());
+                                },
                                 icon: Icon(
                                   Icons.menu,
                                   color: Colors.black,
@@ -106,7 +109,9 @@ class TabletScreen extends StatelessWidget {
                           CircleAvatar(
                             backgroundColor: PlatColors.mainColor,
                             child: IconButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  Get.to((_)=> ContactSliderScreen());
+                                },
                                 icon: Icon(
                                   Icons.add,
                                   color: Colors.black,

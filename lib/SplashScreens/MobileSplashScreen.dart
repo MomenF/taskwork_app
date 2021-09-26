@@ -34,27 +34,19 @@ class _MobileSplashScreenState extends State<MobileSplashScreen> {
         period: Duration(
           seconds: 4
         ),
-          child: Column(
-            children: [
-              ListTile(
-                leading: Icon(Icons.image,size: 50.0,),
-                title: SizedBox(
-                  child: Container(
-                    color: Colors.grey[100],
-                    height: 20,
+          child: ListView.builder(
+              itemCount: 10,
+              itemBuilder: (context,index){
+                return ListTile(
+                  leading: Icon(Icons.image,size: 50.0,),
+                  title: SizedBox(
+                    child: Container(
+                        color: Colors.grey[100],
+                      height: 20,
+                    ),
                   ),
-                ),
-              ),
-              Row(
-                children: [
-                  CircleAvatar(
-                    backgroundColor: Colors.grey[100],
-                  ),
-
-                ],
-              )
-            ],
-          ),
+                );
+              }),
           baseColor: Color(0xffCCCCCC),
           highlightColor: Colors.white)
     );
