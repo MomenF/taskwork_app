@@ -17,10 +17,10 @@ ResponsiveLayout({required this.mobileScreenSize, required this.tabletScreenSize
     return LayoutBuilder(
         builder: (context,constrains){
           if(constrains.maxWidth >= ConstantValues.kDesktopWidth){
-            return webScreenSize ?? mobileScreenSize ;
+            return webScreenSize ;
           }
           if(constrains.maxWidth >= ConstantValues.kTabletWidth){
-            return tabletScreenSize ?? mobileScreenSize ;
+            return tabletScreenSize ;
           }
           else {
             return mobileScreenSize;

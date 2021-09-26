@@ -1,4 +1,4 @@
-import 'package:taskwork_app/Model/user.dart';
+import 'package:taskwork_app/Data/user.dart';
 
 class UserData{
  static  User currentUser = User(

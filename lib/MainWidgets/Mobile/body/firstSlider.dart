@@ -5,7 +5,7 @@ import 'package:taskwork_app/Data/Data.dart';
 
 class MobileSliderToolsScreen extends StatelessWidget {
 
-static String id  = "MobileSliderToolsScreen";
+static String id  = "/MobileSliderToolsScreen";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -47,6 +47,17 @@ static String id  = "MobileSliderToolsScreen";
               ),
               title: Text("Other"),
             ),
+            ListTile(
+              leading: CircleAvatar(
+                  backgroundColor: Color(0xffE4E6EB),
+                  child: IconButton(onPressed: (){
+                    Navigator.pop(context);
+                  },
+                      icon: Icon(Icons.arrow_back_outlined,
+                        color: Colors.black,))),
+              title: Text("Back"),
+            ),
+
 
           ],
         ),

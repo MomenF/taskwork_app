@@ -1,4 +1,7 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/gestures.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:fluttericon/typicons_icons.dart';
 import 'package:fluttericon/fontelico_icons.dart';
 import 'package:fluttericon/linecons_icons.dart';
@@ -45,4 +48,11 @@ class ConstantValues {
 
   static const  kTabletWidth = 800;
   static const kDesktopWidth = 1200;
+}
+
+class MyCustomScroll extends MaterialScrollBehavior {
+  @override
+  Set<PointerDeviceKind> get dragDevices =>
+      {PointerDeviceKind.touch, PointerDeviceKind.mouse};
+  static final ScrollController controller = ScrollController();
 }

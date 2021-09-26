@@ -1,11 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:taskwork_app/Data/Data.dart';
-import 'package:taskwork_app/MainWidgets/Web/webOnlineCircleProfile.dart';
+import 'package:taskwork_app/CommonWidgets/MainSlider/CommonWeb/webOnlineCircleProfile.dart';
 
 class MobileContactSliderScreen extends StatelessWidget {
 
-static String id  = "MobileContactSliderScreen";
+static String id  = "/MobileContactSliderScreen";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -13,6 +13,17 @@ static String id  = "MobileContactSliderScreen";
         color: Color(0xffF0F2F5),
         child: Column(
           children: [
+            ListTile(
+              leading: CircleAvatar(
+                  backgroundColor: Color(0xffE4E6EB),
+                  child: IconButton(onPressed: (){
+                    Navigator.pop ;
+                  },
+                      icon: Icon(Icons.arrow_back_outlined,
+                        color: Colors.black,))),
+              title: Text("Back"),
+            ),
+
             ListTile(
               title: Text("Contacts"),
               trailing : IconButton(onPressed: (){}, icon: Icon(Icons.search)) ,

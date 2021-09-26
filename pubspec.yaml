@@ -30,6 +30,7 @@ dependencies:
   flutter_bloc:
   get:
   get_it:
+  flutter_slider_drawer: 2.0.0
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
@@ -37,7 +38,10 @@ dependencies:
   heroicons: ^0.3.0
   svg_icon: ^0.0.1
   shimmer: ^2.0.0
-
+  bloc_test:
+  conditional_builder_null_safety: ^0.0.4
+  carousel_pro_nullsafety: ^1.0.2
+  carousel_slider: ^4.0.0
 dev_dependencies:
   flutter_test:
     sdk: flutter

@@ -33,7 +33,7 @@ class AudioAndVideoRoom extends StatelessWidget {
               // physics: NeverScrollableScrollPhysics(),
               // shrinkWrap: true,
               scrollDirection: Axis.horizontal,
-              itemCount:  UserData.onLineUsers.length,
+              itemCount:  UserData.onLineUsers.length +1 ,
               itemBuilder: (context, index) {
                 if (index == 0) {
                   return SizedBox(
@@ -55,11 +55,11 @@ class AudioAndVideoRoom extends StatelessWidget {
                     ),
                   );
                 }
-                return OnlineCircleProfile(index);
+                return OnlineCircleProfile(index - 1);
               },
               separatorBuilder: (BuildContext context, int index) {
                 return SizedBox(
-                  width: 25.0,
+                  width: 5.0,
                 );
               },
             ),

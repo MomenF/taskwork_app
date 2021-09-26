@@ -3,8 +3,8 @@ import 'dart:async';
 import 'package:shimmer/shimmer.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:taskwork_app/MainControl/MainScreen.dart';
 import 'package:taskwork_app/MainWidgets/Mobile/MobileHome.dart';
-import 'package:taskwork_app/mainScreens/MainScreen.dart';
 
 
 class TabletSplashScreen extends StatefulWidget {
@@ -29,8 +29,7 @@ class _TabletSplashScreenState extends State<TabletSplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-        ) ,
+
         body: Shimmer.fromColors(
             period: Duration(
                 seconds: 4

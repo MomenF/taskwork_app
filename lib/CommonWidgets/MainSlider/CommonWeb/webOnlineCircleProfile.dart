@@ -24,6 +24,7 @@ class WebOnlineCircleProfile extends StatelessWidget {
                 children: [
                   Image.network("${UserData.onLineUsers[index].imageUrl}",
                     height: double.infinity,
+                    width: double.infinity,
                     fit: BoxFit.fill,  ),    ],   )),   ),
         Container(decoration: BoxDecoration(
             shape: BoxShape.circle,
