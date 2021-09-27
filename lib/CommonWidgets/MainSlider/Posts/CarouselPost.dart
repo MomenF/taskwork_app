@@ -93,9 +93,7 @@ class WebCarouselPost extends StatelessWidget {
                   scrollDirection: Axis.horizontal,
                 ) ,) ,
                 ),
-                SizedBox(
-                  height: 10.0,
-                ),
+                Spacer(),
                 Container(
                   margin: const EdgeInsets.symmetric(
                       horizontal: 15.0
@@ -120,7 +118,9 @@ class WebCarouselPost extends StatelessWidget {
                     ],
                   ),
                 ),
-                Spacer(),
+                SizedBox(
+                  height: 10.0,
+                ),
                 Divider(
                   height: 1.0,
                   thickness: 2.0,

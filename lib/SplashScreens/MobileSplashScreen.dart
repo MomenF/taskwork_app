@@ -8,7 +8,7 @@ import 'package:taskwork_app/MainWidgets/Mobile/MobileHome.dart';
 
 
 class MobileSplashScreen extends StatefulWidget {
-  static String id = "SplashScreen";
+  static String id = "/SplashScreen";
 
   @override
   _MobileSplashScreenState createState() => _MobileSplashScreenState();

@@ -43,9 +43,8 @@ class WebPostAndPic extends StatelessWidget {
                 width: double.infinity,
                   height: 300,
                     child: Image.network("${UserData.currentUser.imageUrl}",fit: BoxFit.fill,width: double.infinity,)),
-                SizedBox(
-                  height: 10.0,
-                ),
+                Spacer(),
+
                 Container(
                   margin: const EdgeInsets.symmetric(
                       horizontal: 15.0
@@ -70,7 +69,9 @@ class WebPostAndPic extends StatelessWidget {
                     ],
                   ),
                 ),
-                Spacer(),
+                SizedBox(
+                  height: 10.0,
+                ),
 
                 Divider(
                   height: 1.0,

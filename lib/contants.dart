@@ -53,6 +53,6 @@ class ConstantValues {
 class MyCustomScroll extends MaterialScrollBehavior {
   @override
   Set<PointerDeviceKind> get dragDevices =>
-      {PointerDeviceKind.touch, PointerDeviceKind.mouse};
+      {PointerDeviceKind.touch, PointerDeviceKind.mouse };
   static final ScrollController controller = ScrollController();
 }

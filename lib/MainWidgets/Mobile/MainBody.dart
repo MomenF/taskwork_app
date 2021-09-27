@@ -39,7 +39,6 @@ class MobileMainBody extends StatelessWidget {
               height: 10.0,
               thickness: 10.0,
             ),
-
             Container(
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -48,7 +47,6 @@ class MobileMainBody extends StatelessWidget {
                         color: PlatColors.webBorder)),
                 child: WebAudioAndVideoRoom()),
             //=====Posts
-
             Divider(
               thickness: 20.0,
               color: Color(0xffF0F2F5),

@@ -27,6 +27,7 @@ class WebScreen extends StatelessWidget {
         var cubit = TabsCubit.get(context);
         return SafeArea(
           child: Scaffold(
+            backgroundColor:Color(0xffF0F2F5) ,
             appBar: PreferredSize(
               preferredSize: Size.fromHeight(100.0),
               child: Row(

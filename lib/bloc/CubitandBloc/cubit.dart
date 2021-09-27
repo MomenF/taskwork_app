@@ -11,19 +11,19 @@ class TabsCubit extends Cubit<TabsState>{
   bool tapHomeSelected = true;
   String homeImage = "assets/icons/tabs/home.png";
   String selectHomeImage = "assets/icons/tabs/selected/selectedHome.png";
-  //==========  =============
+  //==========Group Icon  =============
   bool tapGroupSelected = false;
   String groupImage = "assets/icons/tabs/group.png";
   String selectGroupImage = "assets/icons/tabs/selected/selectedGroup.png";
-  //=============  ===========
+  //============= Video Icon ===========
   bool tapVideoSelected = false;
   String videoImage = "assets/icons/tabs/video.png";
   String selectVideoImage = "assets/icons/tabs/selected/selectedVideo.png";
-  //===========  =========
+  //=========== Page Icon =========
   bool tapPageSelected = false;
   String pageImage = "assets/icons/tabs/page.png";
   String selectPageImage = "assets/icons/tabs/selected/selectedPage.png";
-  //========================
+  //================Notification Icon ========
   bool tapNotificationSelected = false;
   String notificationImage = "assets/icons/tabs/notifications.png";
   String selectNotificationImage = "assets/icons/tabs/selected/selectedNotification.png";

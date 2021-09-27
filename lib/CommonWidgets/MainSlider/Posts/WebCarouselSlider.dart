@@ -74,9 +74,7 @@ class WebCarouselSliderPost extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
-                  height: 10.0,
-                ),
+                Spacer(),
                 Container(
                   margin: const EdgeInsets.symmetric(horizontal: 15.0),
                   child: Row(
@@ -102,7 +100,10 @@ class WebCarouselSliderPost extends StatelessWidget {
                     ],
                   ),
                 ),
-                Spacer(),
+                SizedBox(
+                  height: 10.0,
+                ),
+
                 Divider(
                   height: 1.0,
                   thickness: 2.0,

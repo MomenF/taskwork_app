@@ -45,10 +45,10 @@ class MyApp extends StatelessWidget {
         initialRoute: MainSplashScreen.id,
         routes: {
           MainSplashScreen.id: (context) => MainSplashScreen(),
-          MobileSliderToolsScreen.id: (context) => MobileSliderToolsScreen(),
-          MobileContactSliderScreen.id: (context) =>
-              MobileContactSliderScreen(),
-          ChatScreen.id: (context) => ChatScreen(),
+          // MobileSliderToolsScreen.id: (context) => MobileSliderToolsScreen(),
+          // MobileContactSliderScreen.id: (context) =>
+          //     MobileContactSliderScreen(),
+          // ChatScreen.id: (context) => ChatScreen(),
         },
       ),
     );
